@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.2 r1790748">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="BZT Generated Test Plan">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ThreadGroup" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time"></stringProp>
+        <longProp name="ThreadGroup.start_time">1501809808000</longProp>
+        <longProp name="ThreadGroup.end_time">1501809808000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="Cache" enabled="true">
+          <boolProp name="clearEachIteration">true</boolProp>
+          <boolProp name="useExpires">true</boolProp>
+        </CacheManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Cookies" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+          <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp>
+        </CookieManager>
+        <hashTree/>
+        <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+          <collectionProp name="DNSCacheManager.servers"/>
+          <boolProp name="DNSCacheManager.clearEachIteration">false</boolProp>
+          <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+        </DNSCacheManager>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Defaults" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="user_defined" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </ConfigTestElement>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">User-Agent</stringProp>
+              <stringProp name="Header.value">Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Mobile Safari/537.36</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Action" enabled="true"/>
+          <hashTree>
+            <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+              <collectionProp name="DNSCacheManager.servers"/>
+              <boolProp name="DNSCacheManager.clearEachIteration">false</boolProp>
+              <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+            </DNSCacheManager>
+            <hashTree/>
+            <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="Defaults" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="user_defined" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path"></stringProp>
+              <boolProp name="HTTPSampler.image_parser">true</boolProp>
+              <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+              <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </ConfigTestElement>
+            <hashTree/>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Load BCF" enabled="true">
+              <boolProp name="TransactionController.parent">true</boolProp>
+            </TransactionController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="www.bcf.com.au" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">www.bcf.com.au</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">MUID=2622D1A6CE9A60481607DB74CA9A634F; DOMAIN=bat.bing.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;Boating, Camping and Fishing Store Online - BCF Australia&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1273405624">Boating, Camping and Fishing Store Online - BCF Australia</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetCart" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;plu&quot;:null,&quot;quantity&quot;:null,&quot;sourceID&quot;:null}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">www.bcf.com.au</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/ShoppingCart/GetCart</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">http://www.bcf.com.au/</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">MUID=2622D1A6CE9A60481607DB74CA9A634F; DOMAIN=bat.bing.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="0" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">bat.bing.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/action/0?ti=5256926&amp;Ver=2&amp;mid=ae25949d-a52a-245d-044c-4426c9404a6c&amp;evt=pageLoad&amp;sid=4373206d-1&amp;lt=24731&amp;pi=0&amp;lg=en-GB&amp;sw=400&amp;sh=738&amp;sc=24&amp;tl=Boating,%20Camping%20and%20Fishing%20Store%20Online%20-%20BCF%20Australia&amp;kw=BCF,%20Boating,%20Camping%20and%20Fishing%20Store%20Online%20-%20BCF%20Australia&amp;p=http%3A%2F%2Fwww.bcf.com.au%2F&amp;r=&amp;rn=767872</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">MUID=2622D1A6CE9A60481607DB74CA9A634F; DOMAIN=bat.bing.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cse" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">connexity.net</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/c/cse?a=S&amp;A=232&amp;D=576d&amp;V=10&amp;R=400x738c24&amp;T=6e&amp;I0k=prodid&amp;I0v=%23%23INSERT_PRODUCT_ID%23%23&amp;J=http%3A%2F%2Fwww.bcf.com.au%2F&amp;b=2193</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">MUID=2622D1A6CE9A60481607DB74CA9A634F; DOMAIN=bat.bing.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Test Action" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">4000</stringProp>
+            </TestAction>
+            <hashTree/>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Select Item" enabled="true">
+              <boolProp name="TransactionController.parent">true</boolProp>
+            </TransactionController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cse_2" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">connexity.net</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/c/cse?a=P&amp;A=232&amp;C=0&amp;D=576d&amp;N=0-1a5b4c1526340eb7&amp;R=400x738c24&amp;T=6e&amp;U=e9130e0e60a7f797-06221138786d19a9-211dc3652322137f&amp;J=http%253a%252f%252fwww.bcf.com.au%252f&amp;V=10&amp;I0k=prodid&amp;I0v=%23%23INSERT_PRODUCT_ID%23%23&amp;Q=v2.0.1,c:y,h5L:y,TS:(run:126392ms),(Burl-R:126401ms),(Burl-P:126403ms)</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">MUID=2622D1A6CE9A60481607DB74CA9A634F; DOMAIN=bat.bing.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="activityi;src=6771107;type=invmedia;cat=bchhyctd;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=6972012504137.164" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">6771107.fls.doubleclick.net</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/activityi</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">MUID=2622D1A6CE9A60481607DB74CA9A634F; DOMAIN=bat.bing.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">goog-malware-shavar;a:252895-271200:s:248091-248437,248439-248463,248465-248532,248534-248537,248539-248587,248589-248592,248594-248660,248662-248693,248695-248753,248755-248810,248812-248832,248835-248931,248933-248955,248957-248959,248961-248967,248969-248971,248973,248975-248984,248986,248988-249034,249036,249038-249040,249042,249044,249046-249048,249050,249052,249054-249059,249061-249105,249107-249125,249127-249231,249233-249242,249244-249313,249315-249385,249387-249388,249390-249446,249448-249452,249454-249465,249467,249469-249473,249476-249524,249526-249538,249540,249542-249544,249546-249657,249659-249660,249662-249671,249673-249725,249727-249736,249738-249856,249858-249875,249878-249926,249928-249938,249940-249958,249960-249961,249963-249991,249993-249994,249996-250037,250039-250054,250056-250057,250059-250218,250220-250284,250286-250331,250333-250341,250343-250351,250353-250405,250407-250413,250415-250419,250422-250433,250435-250467,250469-250475,250477-250478,250481-250493,250495-250512,250514-250516,250518-250622,250624-250629,250631-250637,250639-250655,250657-250715,250717-250718,250720-250728,250730-250747,250749-250796,250799-250800,250802-250811,250813,250815-250818,250820-250880,250882,250884-250885,250887-250895,250897-250905,250908-250909,250912-250941,250943-250950,250952-250958,250961-250965,250969-250970,250972-250975,250977,250979-250997,250999-251018,251021-251039,251041-251046,251049-251052,251055-251057,251060-251070,251073-251077,251079-251082,251084-251098,251100-251130,251132-251136,251138-251144,251146-251154,251157-251204,251206-251210,251212-251218,251220-251232,251234-251238,251240-251285,251287-251298,251300-251306,251308-251318,251320-251450,251452-251483,251486-251517,251519-251537,251539-251543,251546-251547,251549-251627,251629,251633-251644,251646-251790,251792-251794,251796-251955,251957-251960,251962-251965,251967-252031,252033-252084,252086-252104,252106-252121,252123,252125-252155,252157-252177,252179-252195,252200-252201,252203-252208,252210,252212-252218,252220-252230,252232-252234,252236-252244,252246,252248-252263,252265,252267-252274,252276,252278,252280-252358,252360-252361,252363-252374,252376-252382,252384-252703,252705-253174,253176-253509,253511-262839,262841-263875,263877-264204,264206-267149&#xd;
+goog-phish-shavar;a:472768-484921:s:308830-308865,308867,308869-308871,308873-308884,308886-308899,308901-308907,308909-308924,308927-308944,308946-308958,308960-308974,308976-308993,308995,308997-309016,309018-309030,309032-309044,309046-309078,309081-309095,309097-309121,309123-309154,309156-309191,309193,309195-309202,309204-309216,309218-309250,309252-309337,309339-309349,309351-309366,309368-309390,309392-309428,309430-309451,309453-309463,309465,309467-309473,309475-309480,309482-309483,309485-309503,309505-309511,309513,309515-309516,309518-309523,309525-309583,309585-309593,309595-309604,309606,309608-309618,309620-309805,309807-309817,309819-309833,309835-309860,309862-309900,309902-309906,309908-309924,309926-309927,309929,309931-309940,309942-309946,309949-309964,309966-309968,309970-310037,310039-310055,310057-310063,310065-310069,310072-310077,310079-310094,310096-310106,310108-310117,310119-310124,310126-310132,310134-310142,310144-310150,310152-310180,310182-310220,310222-310227,310229-310235,310237-310247,310249-310257,310259-310288,310290-310307,310309-310339,310341-310367,310369-310377,310379-310403,310405-310419,310421-310444,310446-310447,310449-310505,310507-310525,310527-310529,310531-310567,310569-310579,310581-310585,310587-310597,310599,310601-310603,310605-310636,310639-310653,310655-310669,310671-310703,310705-310725,310727-310740,310742-310749,310751-310769,310771-310775,310777-310792,310794-310826,310828-310847,310849-310860,310862-310877,310880-310882,310884-310893,310895-310905,310907-310974,310976-311014,311016-311031,311033-311039,311041-311059,311061-311098,311100-311109,311111-311119,311121-311124,311126-311141,311143-311172,311174,311176-311186,311188-311189,311191-311198,311200-311269,311271-311290,311292-311296,311298-311327,311329-311331,311333-311367,311370-311391,311393-311410,311412-311420,311422-311447,311449-311452,311454-311457,311459-311535,311537-311545,311547-311574,311576-311577,311579-311587,311589-311607,311609-311620,311622-311654,311656-311676,311678-311726,311728-311783,311785-311793,311795-311822,311824-311836,311838-311859,311861-311868,311870-311874,311876-311878,311880,311882-311884,311886-311889,311891-311902,311905-311909,311911-311920,311922,311924-311931,311933,311935-311956,311958-311960,311962-311966,311968-311971,311973-311977,311979,311981-311991,311993,311995,311997,311999,312001,312003-312010,312012-312025,312027-312030,312032,312034,312036-312040,312043-312055,312057-312095,312097,312099-312116,312118-312128,312130-312156,312158-312161,312163-312165,312167-312172,312174-312186,312188,312190-312206,312208-312238,312240,312242-312286,312288-312324,312326-312338,312340-312343,312345-312356,312358-312395,312397-312401,312403-312430,312432-312435,312437-312455,312457-312463,312465-312476,312478-312506,312508-312520,312522-312525,312527-312541,312543-312577,312579-312581,312583-312593,312595-312622,312624-312709,312711-312733,312735-312798,312800-312872,312874-312879,312881-312888,312890-312927,312929-312950,312952-312994,312996-313029,313031-313064,313066-313159,313161-313177,313179-313182,313184-313186,313188-313274,313276-313289,313291-313328,313330-313336,313338-313355,313357-313378,313380-313437,313439-313456,313458-313504,313506-313553,313555-313558,313560-313596,313598-313636,313638-313647,313649-313674,313676-313680,313682-313688,313690-313735,313737-313742,313744-313756,313758-313760,313762-313811,313813-313836,313838-313839,313841-313848,313850-313856,313858-313880,313882-313889,313891-313899,313901,313903-313906,313908-313923,313925-313937,313939-313943,313945-313954,313956,313958-313983,313985-313987,313989-313991,313993-314001,314004-314013,314015-314032,314034,314036-314048,314050-314058,314060-314068,314070,314072-314073,314075-314076,314078-314081,314083-314085,314087-314094,314096-314097,314099-314102,314104-314134,314136-314137,314139-314144,314146-314162,314164-314200,314202-314208,314210-314229,314231-314240,314242-314245,314247-314253,314255-314296,314298-314315,314317-314330,314332-314335,314337-314339,314341-314344,314346-314370,314372-314384,314386-314393,314395-314424,314426-314446,314448-314458,314460-314477,314479-314501,314503-314534,314536-314544,314546-314551,314553-314554,314556-314568,314570-314589,314591-314593,314595-314606,314608-314618,314620-314633,314635-314640,314642-314643,314645-314655,314657,314660-314662,314664-314666,314668-314692,314694-314706,314709-314727,314730-314742,314744-314747,314749-314756,314758-314764,314766,314768-314780,314783-314788,314790-314801,314803-314819,314821-314823,314825-314828,314830-314843,314846-314858,314860-314864,314867-314873,314875-314887,314889-314894,314896-314971,314973-314987,314989-315016,315018-315021,315023-315025,315027-315033,315035,315037-315039,315041-315045,315047-315056,315058-315073,315075-315078,315080-315081,315083-315085,315087-315111,315113-315128,315131-315149,315152,315154-315174,315176,315178-315179,315181-315221,315223-315237,315240-315245,315247-315251,315253-315272,315274-315276,315278,315280-315285,315287-315289,315291-315307,315309-315314,315316-315319,315321-315324,315326-315340,315342,315344-315364,315366-315372,315374-315377,315380-315384,315386-315397,315399-315403,315405-315416,315418,315420-315431,315433-315440,315443,315445-315447,315449-315451,315453-315468,315470-315484,315486-315495,315497-315522,315524-315531,315533-315541,315543-315545,315547-315552,315554-315563,315565-315576,315578-315584,315586-315592,315594-315610,315612,315614,315616-315623,315625-315636,315638,315640-315642,315644-315649,315651-315655,315657-315668,315670,315672-315676,315678-315681,315683-315685,315687-315689,315691-315694,315696-315710,315712-315729,315731-315733,315735-315742,315744-315746,315748-315753,315755-315759,315761-315762,315764-315778,315780,315782-315788,315790-315800,315802-315811,315813-315814,315816-315819,315821-315836,315838-315858,315860-315894,315896-315932,315934-315937,315939-315942,315944-315965,315967-315973,315975-315989,315991-316010,316012-316020,316022-316027,316029-316059,316061-316075,316077-316082,316084-316085,316087,316089-316484,316486-316502,316504-316916,316918-316990,316992-317395,317397-317401,317404,317406-328349&#xd;
+goog-badbinurl-shavar;a:132025-133589:s:135344-136188,136190-137092&#xd;
+goog-csdwhite-sha256;a:254-384:s:126-230&#xd;
+goog-downloadwhite-digest256;a:5-84:s:2-7,10-59&#xd;
+goog-badcrxids-digestvar;a:2-2086:s:1,3-190&#xd;
+goog-badip-digest256;a:2844&#xd;
+goog-unwanted-shavar;a:76385-99260:s:71811,71813-71817,71820-71821,71823-71826,71828,71830,71833,71837,71840,71842-71846,71849-71853,71856-71857,71859,71861-71864,71866,71870,71874-71877,71879-71880,71882-71883,71889,71893-71895,71897-71902,71906,71908,71910-71911,71914-71915,71918-71924,71929-71930,71932,71939,71942,71944,71949,71951-71953,71956-71957,71959,71963,71967-71970,71972-71973,71975-71978,71981-71986,71988,71991,71993,71995,71999-72002,72004-72006,72009-72012,72014,72017,72019-72021,72023-72029,72032,72035,72049,72051,72054,72067,72072-72075,72078-72079,72081,72084-72086,72095,72097,72102-72103,72105,72108-72112,72114,72118-72120,72122-72124,72126-72127,72129-72131,72133,72136,72143,72152,72156,72158-72160,72163,72168-72169,72182,72189,72191,72198,72201,72203,72206-72207,72213,72218,72225,72227,72229,72231-72232,72238-72239,72241,72243-72245,72247,72249,72251,72254-72257,72262,72265-72276,72279,72281-72282,72285-72286,72288-72289,72299,72306,72308,72310,72314-72315,72318,72320,72322-72326,72328-72331,72333-72335,72340,72344-72345,72347-72352,72355-72358,72360,72362,72367,72371-72372,72374-72377,72379,72382-72384,72387,72389-72394,72401-72402,72404-72405,72407,72409,72411-72414,72416-72418,72420-72421,72424,72426-72430,72432,72434,72436-72437,72439-72442,72446,72448-72450,72452-72454,72461-72464,72466-72468,72470,72472-72473,72478,72480,72486-72491,72498,72500,72504-72506,72508-72510,72512,72514,72516,72522-72524,72526-72527,72530-72533,72536-72537,72539-72543,72545-72548,72550,72552,72554-72555,72557,72559-72562,72564-72570,72572,72575,72578-72579,72582-72584,72586-72587,72590-72598,72601,72603-72604,72607,72610,72612-72616,72619-72621,72623-72631,72635-72639,72642-72649,72651-72660,72663-72667,72670-72671,72674-72676,72678-72680,72683,72686-72688,72690-72695,72697-72700,72702-72704,72706-72707,72709-72716,72719-72725,72727,72729-72734,72738-72740,72743,72745-72747,72749-72753,72755,72757-72772,72774-72776,72778-72779,72782,72784,72787-72788,72790-72791,72793-72797,72800,72804-72808,72812-72814,72816-72817,72821-72822,72825-72827,72831-72835,72837-72844,72846-72853,72856-72859,72861-72862,72864-72868,72870,72872-72874,72881,72883,72885-72896,72898-72901,72903,72905,72907-72908,72911-72916,72918,72921-72936,72938-72939,72941-72942,72945-72947,72949-72957,72962-72963,72965-72966,72968-72973,72975-72978,72980,72982-72984,72987-72991,72994-72995,72999-73006,73008-73015,73017-73019,73022,73024-73027,73029-73030,73032-73047,73049-73060,73063-73064,73067,73069,73071-73079,73081-73082,73084-73088,73092-73096,73098,73100-73102,73104-73106,73108-73110,73112,73114,73117,73119-73120,73122,73133-73134,73138,73142-73143,73146-73147,73149,73151,73155-73156,73159,73168,73179-73180,73188-73189,73194,73197-73198,73204,73206,73208-73215,73217-73220,73222-73226,73228-73235,73237-73238,73240-73245,73247,73251,73253,73255,73259,73261,73263-73274,73276-73284,73286,73288,73290-73292,73295-73297,73299,73302-73303,73305-73311,73313-73314,73316,73318-73325,73327-73342,73344-73365,73367-73369,73372-73379,73381-73384,73386-73391,73393-73397,73400,73402-73409,73411-73414,73416-73424,73426-73435,73437-73438,73440-73452,73454-73455,73457-73464,73466-73467,73471-73472,73476,73478-73489,73491-73497,73499-73504,73506-73509,73511-73518,73520-73525,73527-73530,73532-73541,73543-73551,73553-73555,73557-73565,73567-73574,73579-73594,73596-73607,73610-73616,73618-73631,73633-73642,73644-73651,73653-73663,73665-73666,73668-73670,73675,73677-73680,73683-73711,73713-73714,73716-73717,73719-73720,73722-73725,73727-73740,73742-73766,73768-73771,73773-73785,73787-73792,73795-73796,73798,73800-73807,73809-73822,73824,73826,73828-73844,73846-73851,73853-73855,73857-73860,73862-73865,73867-73878,73880-73887,73890-73892,73895-73899,73901-73902,73904,73909,73911-73916,73921-73933,73935-73942,73944-73950,73952-73954,73956-73962,73964-73965,73967-73969,73971-73974,73976-73977,73979-73982,73985-73997,73999-74005,74007-74008,74010-74015,74017-74022,74024-74027,74029-74042,74044-74050,74052-74067,74069-74070,74073,74075-74079,74082-74090,74093-74099,74101-74109,74113-74114,74116-74120,74122,74124,74128-74139,74141-74144,74146-74155,74158-74159,74161-74164,74166-74175,74177-74186,74188-74213,74217-74219,74221-74225,74227-74236,74238-74257,74259-74267,74269-74278,74280-74292,74294-74303,74305-74308,74311-74332,74334-74336,74339-74340,74353-74373,74375-74382,74384-74385,74387-74388,74390-74405,74408-74424,74426-74431,74433-74437,74439-74440,74443-74465,74467,74469,74471-74476,74478-74480,74483-74484,74487-74489,74491-74498,74500-74502,74504-74514,74516-74521,74523,74525-74526,74528-74533,74535-74545,74547-74551,74553-74563,74567-74568,74570,74573-74575,74577-74585,74587-74592,74594-74628,74630-74633,74635,74637-74643,74645-74658,74660-74666,74668-74671,74675-74692,74694-74697,74699,74701-74711,74713,74716-74736,74738,74740-74741,74743-74750,74752-74760,74762-74765,74767-74772,74774-74777,74780,74783,74785,74788-74792,74794-74798,74800-74803,74806,74809,74811-74812,74814,74818-74824,74826-74829,74831-74832,74834,74836-74841,74843-74847,74849-74853,74855-74869,74872-74886,74891-74892,74894,74896,74898-74899,74904,74908-74917,74921-74924,74926-74928,74930-74935,74941,74943-74947,74949-74954,74956,74958-74963,74966-74972,74974-74976,74979-74981,74983-74993,74995,74997-75001,75003-75015,75017-75020,75022-75026,75028,75030-75048,75051-75053,75055-75061,75063,75065-75074,75077-75079,75081-75092,75094-75095,75097,75099-75102,75105-75106,75109-75113,75115-75120,75122,75124-75125,75127-75161,75165,75167-75177,75179-75180,75182,75184-75188,75190-75191,75193,75195,75197,75199-75200,75202-75203,75205-75210,75214-75227,75229,75232,75234-75240,75242-75255,75257-75262,75266,75268-75273,75276-75278,75281-75292,75294-75363,75365-75372,75374-75380,75382,75384-75389,75391-75392,75394-75400,75403-75415,75417-75418,75420-75430,75432-75449,75451-75467,75469-75490,75492-75498,75500-75503,75505-75522,75525-75534,75536-75547,75549,75551-75562,75566-75582,75584-75587,75589-75596,75598-75606,75608-75609,75611-75646,75649,75652,75656-75674,75676-75682,75684-75721,75723,75725-75730,75732-75763,75765,75769-75776,75779,75781-75796,75798-75830,75832,75834-75851,75853-75856,75859-75870,75872-75875,75877-75884,75887-75888,75890-75961,75963-75969,75971-75973,75975-75999,76001-76002,76006-76018,76021-76026,76028,76030-76036,76038-76045,76047-76053,76055-76056,76058-76071,76073-76083,76085-76086,76088,76090-76092,76094-76097,76100-76107,76109-76142,76144-76163,76169-76176,76178-76181,76184-76188,76191,76193-76200,76202-76207,76209-76214,76217,76219-76224,76226-76243,76245-76247,76249-76257,76261-76289,76291-76293,76295-76297,76299-76308,76310-76313,76316-76324,76326-76370,76372,76374-76390,76392-76406,76408-76413,76417-76420,76423-76437,76439-76450,76452-76467,76470-76494,76497-76509,76511-76577,76580-76589,76592-76610,76613-76631,76634-76657,76659-76661,76663,76666-76672,76674,76676-76711,76713-76745,76747-76755,76757-76764,76766-76781,76783-76795,76798-76820,76822-76837,76839-76866,76868-76898,76901-76942,76945-76953,76956-76988,76990-77002,77004-77010,77012-77016,77018-77026,77028-77036,77038-77047,77050-77088,77090-77125,77127-77309,77311-77324,77326-77344,77346-77376,77378-77383,77386-77454,77456-77460,77462-77475,77477-77493,77497-77546,77548-77587,77589-77596,77598-77612,77614-77623,77625-77629,77631-77656,77658-77727,77729-77762,77764,77766-77773,77775-77830,77832-77836,77838-77843,77845-77865,77867-77876,77878-77883,77885-77899,77901-77949,77951-77959,77961-77979,77981-77983,77985-77987,77989-77996,77998-78047,78049-78068,78070-78100,78102-78111,78113-78119,78121-78128,78130-78132,78134-78186,78188-78238,78240-78248,78250-78265,78267-78300,78302-78320,78322-78339,78341-78373,78375-78417,78419-78441,78444-78458,78460-78480,78482-78496,78498-78502,78504-78535,78537-78544,78548-78634,78636-78677,78679-78695,78697-78702,78704-78718,78720-78744,78746-78783,78785-78786,78789-78794,78796-78827,78829,78831-78911,78913-78942,78945-78959,78961-79000,79002-79013,79015-79076,79078-79083,79085-79088,79091-79094,79096-79123,79125-79174,79176-79201,79203-79218,79220-79222,79224-79225,79227-79245,79247-79250,79252-79258,79260-79268,79270-79274,79276-79308,79311-79312,79314-79321,79323-79329,79331-79336,79338-79356,79358-79368,79370-79394,79396-79416,79418-79462,79464-79474,79476-79516,79519-79547,79549-79561,79563-79600,79603-79616,79618-79660,79662-79683,79685-79688,79690-79733,79735-79742,79744-79757,79759-79793,79796-79845,79847-79863,79865-79876,79878-79965,79967-79992,79994-80004,80006-80014,80016-80056,80058-80061,80063-80077,80079-80082,80084-80088,80090-80101,80103-80105,80107-80110,80112-80114,80116-80118,80120-80142,80144-80146,80148-80155,80157-80188,80190-80211,80213-80224,80226-80257,80259-80269,80271-80289,80291-80301,80303-80304,80306-80328,80330-80333,80335-80342,80344-80362,80365-80366,80368-80398,80400-80441,80443-80447,80449-80513,80515-80529,80531-80584,80586-80633,80635-80640,80642-80645,80647-80648,80650-80656,80658-80718,80720-80728,80730-80863,80865-80919,80921-80926,80928-80941,80943-80944,80946-80960,80963-80966,80968-80975,80977-80980,80982-80988,80991-80992,80994-81002,81005-81017,81020-81037,81039-81098,81100-81134,81136-81256,81258-81351,81353-81361,81363-81367,81370-81434,81436-81542,81544-81566,81568-81656,81658-81693,81695-81753,81756-81763,81766,81768-81771,81773-81804,81806-82001,82003-82028,82030-82126,82128,82130-82234,82236-82352,82355-82379,82381-82390,82392-82412,82414-82437,82439-82456,82458-82560,82562-82755,82757,82759-82776,82778-82814,82816-82842,82844-82947,82949-83087,83089-83090,83092-83179,83181,83184-83299,83301-83369,83371-83446,83448-83485,83487-83542,83544-83674,83677-83745,83747-83796,83798-84009,84011-84015,84017-84205,84207-84381,84383-84722,84724-84780,84782-84829,84831-84905,84907-84939,84941-85022,85024-85193,85195-85227,85229-85231,85233-85247,85249-85259,85261-85595,85597-85888,85890-85939,85941-85950,85952-86170,86172-86333,86335-86499,86501-86640,86642-86741,86743-87028,87030-87083,87085-87092,87094-87147,87149,87151-87154,87156-87225,87227-87235,87237-87294,87296-87385,87387-87443,87445-87651,87653-87715,87717-88123,88125-88419,88421-88484,88486,88489-88661,88663-88697,88699-88868,88870-88948,88950-89119,89121-89175,89177-89187,89189-89239,89241-89265,89267-89274,89276-89307,89309-89365,89367-89419,89421-89511,89513-89653,89655-89870,89872-90226,90228-90237,90239-90518,90520-90742,90745-90819,90821-91026,91028-91071,91073-91240,91242-91312,91314-91354,91356-91515,91517,91519-91680,91682-91711,91713-91944,91946-91984,91986-92049,92051-94637&#xd;
+goog-whitemodule-digest256;a:1-93&#xd;
+goog-badresource-shavar;a:1-11&#xd;
+</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">safebrowsing.google.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/safebrowsing/downloads?client=googlechrome&amp;appver=60.0.3112.78&amp;pver=3.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;ext=0 </stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree/>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="downloads" enabled="false">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">goog-malware-shavar;a:252895-271200:s:248091-248437,248439-248463,248465-248532,248534-248537,248539-248587,248589-248592,248594-248660,248662-248693,248695-248753,248755-248810,248812-248832,248835-248931,248933-248955,248957-248959,248961-248967,248969-248971,248973,248975-248984,248986,248988-249034,249036,249038-249040,249042,249044,249046-249048,249050,249052,249054-249059,249061-249105,249107-249125,249127-249231,249233-249242,249244-249313,249315-249385,249387-249388,249390-249446,249448-249452,249454-249465,249467,249469-249473,249476-249524,249526-249538,249540,249542-249544,249546-249657,249659-249660,249662-249671,249673-249725,249727-249736,249738-249856,249858-249875,249878-249926,249928-249938,249940-249958,249960-249961,249963-249991,249993-249994,249996-250037,250039-250054,250056-250057,250059-250218,250220-250284,250286-250331,250333-250341,250343-250351,250353-250405,250407-250413,250415-250419,250422-250433,250435-250467,250469-250475,250477-250478,250481-250493,250495-250512,250514-250516,250518-250622,250624-250629,250631-250637,250639-250655,250657-250715,250717-250718,250720-250728,250730-250747,250749-250796,250799-250800,250802-250811,250813,250815-250818,250820-250880,250882,250884-250885,250887-250895,250897-250905,250908-250909,250912-250941,250943-250950,250952-250958,250961-250965,250969-250970,250972-250975,250977,250979-250997,250999-251018,251021-251039,251041-251046,251049-251052,251055-251057,251060-251070,251073-251077,251079-251082,251084-251098,251100-251130,251132-251136,251138-251144,251146-251154,251157-251204,251206-251210,251212-251218,251220-251232,251234-251238,251240-251285,251287-251298,251300-251306,251308-251318,251320-251450,251452-251483,251486-251517,251519-251537,251539-251543,251546-251547,251549-251627,251629,251633-251644,251646-251790,251792-251794,251796-251955,251957-251960,251962-251965,251967-252031,252033-252084,252086-252104,252106-252121,252123,252125-252155,252157-252177,252179-252195,252200-252201,252203-252208,252210,252212-252218,252220-252230,252232-252234,252236-252244,252246,252248-252263,252265,252267-252274,252276,252278,252280-252358,252360-252361,252363-252374,252376-252382,252384-252703,252705-253174,253176-253509,253511-262839,262841-263875,263877-264204,264206-267149\ngoog-phish-shavar;a:472768-484921:s:308830-308865,308867,308869-308871,308873-308884,308886-308899,308901-308907,308909-308924,308927-308944,308946-308958,308960-308974,308976-308993,308995,308997-309016,309018-309030,309032-309044,309046-309078,309081-309095,309097-309121,309123-309154,309156-309191,309193,309195-309202,309204-309216,309218-309250,309252-309337,309339-309349,309351-309366,309368-309390,309392-309428,309430-309451,309453-309463,309465,309467-309473,309475-309480,309482-309483,309485-309503,309505-309511,309513,309515-309516,309518-309523,309525-309583,309585-309593,309595-309604,309606,309608-309618,309620-309805,309807-309817,309819-309833,309835-309860,309862-309900,309902-309906,309908-309924,309926-309927,309929,309931-309940,309942-309946,309949-309964,309966-309968,309970-310037,310039-310055,310057-310063,310065-310069,310072-310077,310079-310094,310096-310106,310108-310117,310119-310124,310126-310132,310134-310142,310144-310150,310152-310180,310182-310220,310222-310227,310229-310235,310237-310247,310249-310257,310259-310288,310290-310307,310309-310339,310341-310367,310369-310377,310379-310403,310405-310419,310421-310444,310446-310447,310449-310505,310507-310525,310527-310529,310531-310567,310569-310579,310581-310585,310587-310597,310599,310601-310603,310605-310636,310639-310653,310655-310669,310671-310703,310705-310725,310727-310740,310742-310749,310751-310769,310771-310775,310777-310792,310794-310826,310828-310847,310849-310860,310862-310877,310880-310882,310884-310893,310895-310905,310907-310974,310976-311014,311016-311031,311033-311039,311041-311059,311061-311098,311100-311109,311111-311119,311121-311124,311126-311141,311143-311172,311174,311176-311186,311188-311189,311191-311198,311200-311269,311271-311290,311292-311296,311298-311327,311329-311331,311333-311367,311370-311391,311393-311410,311412-311420,311422-311447,311449-311452,311454-311457,311459-311535,311537-311545,311547-311574,311576-311577,311579-311587,311589-311607,311609-311620,311622-311654,311656-311676,311678-311726,311728-311783,311785-311793,311795-311822,311824-311836,311838-311859,311861-311868,311870-311874,311876-311878,311880,311882-311884,311886-311889,311891-311902,311905-311909,311911-311920,311922,311924-311931,311933,311935-311956,311958-311960,311962-311966,311968-311971,311973-311977,311979,311981-311991,311993,311995,311997,311999,312001,312003-312010,312012-312025,312027-312030,312032,312034,312036-312040,312043-312055,312057-312095,312097,312099-312116,312118-312128,312130-312156,312158-312161,312163-312165,312167-312172,312174-312186,312188,312190-312206,312208-312238,312240,312242-312286,312288-312324,312326-312338,312340-312343,312345-312356,312358-312395,312397-312401,312403-312430,312432-312435,312437-312455,312457-312463,312465-312476,312478-312506,312508-312520,312522-312525,312527-312541,312543-312577,312579-312581,312583-312593,312595-312622,312624-312709,312711-312733,312735-312798,312800-312872,312874-312879,312881-312888,312890-312927,312929-312950,312952-312994,312996-313029,313031-313064,313066-313159,313161-313177,313179-313182,313184-313186,313188-313274,313276-313289,313291-313328,313330-313336,313338-313355,313357-313378,313380-313437,313439-313456,313458-313504,313506-313553,313555-313558,313560-313596,313598-313636,313638-313647,313649-313674,313676-313680,313682-313688,313690-313735,313737-313742,313744-313756,313758-313760,313762-313811,313813-313836,313838-313839,313841-313848,313850-313856,313858-313880,313882-313889,313891-313899,313901,313903-313906,313908-313923,313925-313937,313939-313943,313945-313954,313956,313958-313983,313985-313987,313989-313991,313993-314001,314004-314013,314015-314032,314034,314036-314048,314050-314058,314060-314068,314070,314072-314073,314075-314076,314078-314081,314083-314085,314087-314094,314096-314097,314099-314102,314104-314134,314136-314137,314139-314144,314146-314162,314164-314200,314202-314208,314210-314229,314231-314240,314242-314245,314247-314253,314255-314296,314298-314315,314317-314330,314332-314335,314337-314339,314341-314344,314346-314370,314372-314384,314386-314393,314395-314424,314426-314446,314448-314458,314460-314477,314479-314501,314503-314534,314536-314544,314546-314551,314553-314554,314556-314568,314570-314589,314591-314593,314595-314606,314608-314618,314620-314633,314635-314640,314642-314643,314645-314655,314657,314660-314662,314664-314666,314668-314692,314694-314706,314709-314727,314730-314742,314744-314747,314749-314756,314758-314764,314766,314768-314780,314783-314788,314790-314801,314803-314819,314821-314823,314825-314828,314830-314843,314846-314858,314860-314864,314867-314873,314875-314887,314889-314894,314896-314971,314973-314987,314989-315016,315018-315021,315023-315025,315027-315033,315035,315037-315039,315041-315045,315047-315056,315058-315073,315075-315078,315080-315081,315083-315085,315087-315111,315113-315128,315131-315149,315152,315154-315174,315176,315178-315179,315181-315221,315223-315237,315240-315245,315247-315251,315253-315272,315274-315276,315278,315280-315285,315287-315289,315291-315307,315309-315314,315316-315319,315321-315324,315326-315340,315342,315344-315364,315366-315372,315374-315377,315380-315384,315386-315397,315399-315403,315405-315416,315418,315420-315431,315433-315440,315443,315445-315447,315449-315451,315453-315468,315470-315484,315486-315495,315497-315522,315524-315531,315533-315541,315543-315545,315547-315552,315554-315563,315565-315576,315578-315584,315586-315592,315594-315610,315612,315614,315616-315623,315625-315636,315638,315640-315642,315644-315649,315651-315655,315657-315668,315670,315672-315676,315678-315681,315683-315685,315687-315689,315691-315694,315696-315710,315712-315729,315731-315733,315735-315742,315744-315746,315748-315753,315755-315759,315761-315762,315764-315778,315780,315782-315788,315790-315800,315802-315811,315813-315814,315816-315819,315821-315836,315838-315858,315860-315894,315896-315932,315934-315937,315939-315942,315944-315965,315967-315973,315975-315989,315991-316010,316012-316020,316022-316027,316029-316059,316061-316075,316077-316082,316084-316085,316087,316089-316484,316486-316502,316504-316916,316918-316990,316992-317395,317397-317401,317404,317406-328349\ngoog-badbinurl-shavar;a:132025-133589:s:135344-136188,136190-137092\ngoog-csdwhite-sha256;a:254-384:s:126-230\ngoog-downloadwhite-digest256;a:5-84:s:2-7,10-59\ngoog-badcrxids-digestvar;a:2-2086:s:1,3-190\ngoog-badip-digest256;a:2844\ngoog-unwanted-shavar;a:76385-99260:s:71811,71813-71817,71820-71821,71823-71826,71828,71830,71833,71837,71840,71842-71846,71849-71853,71856-71857,71859,71861-71864,71866,71870,71874-71877,71879-71880,71882-71883,71889,71893-71895,71897-71902,71906,71908,71910-71911,71914-71915,71918-71924,71929-71930,71932,71939,71942,71944,71949,71951-71953,71956-71957,71959,71963,71967-71970,71972-71973,71975-71978,71981-71986,71988,71991,71993,71995,71999-72002,72004-72006,72009-72012,72014,72017,72019-72021,72023-72029,72032,72035,72049,72051,72054,72067,72072-72075,72078-72079,72081,72084-72086,72095,72097,72102-72103,72105,72108-72112,72114,72118-72120,72122-72124,72126-72127,72129-72131,72133,72136,72143,72152,72156,72158-72160,72163,72168-72169,72182,72189,72191,72198,72201,72203,72206-72207,72213,72218,72225,72227,72229,72231-72232,72238-72239,72241,72243-72245,72247,72249,72251,72254-72257,72262,72265-72276,72279,72281-72282,72285-72286,72288-72289,72299,72306,72308,72310,72314-72315,72318,72320,72322-72326,72328-72331,72333-72335,72340,72344-72345,72347-72352,72355-72358,72360,72362,72367,72371-72372,72374-72377,72379,72382-72384,72387,72389-72394,72401-72402,72404-72405,72407,72409,72411-72414,72416-72418,72420-72421,72424,72426-72430,72432,72434,72436-72437,72439-72442,72446,72448-72450,72452-72454,72461-72464,72466-72468,72470,72472-72473,72478,72480,72486-72491,72498,72500,72504-72506,72508-72510,72512,72514,72516,72522-72524,72526-72527,72530-72533,72536-72537,72539-72543,72545-72548,72550,72552,72554-72555,72557,72559-72562,72564-72570,72572,72575,72578-72579,72582-72584,72586-72587,72590-72598,72601,72603-72604,72607,72610,72612-72616,72619-72621,72623-72631,72635-72639,72642-72649,72651-72660,72663-72667,72670-72671,72674-72676,72678-72680,72683,72686-72688,72690-72695,72697-72700,72702-72704,72706-72707,72709-72716,72719-72725,72727,72729-72734,72738-72740,72743,72745-72747,72749-72753,72755,72757-72772,72774-72776,72778-72779,72782,72784,72787-72788,72790-72791,72793-72797,72800,72804-72808,72812-72814,72816-72817,72821-72822,72825-72827,72831-72835,72837-72844,72846-72853,72856-72859,72861-72862,72864-72868,72870,72872-72874,72881,72883,72885-72896,72898-72901,72903,72905,72907-72908,72911-72916,72918,72921-72936,72938-72939,72941-72942,72945-72947,72949-72957,72962-72963,72965-72966,72968-72973,72975-72978,72980,72982-72984,72987-72991,72994-72995,72999-73006,73008-73015,73017-73019,73022,73024-73027,73029-73030,73032-73047,73049-73060,73063-73064,73067,73069,73071-73079,73081-73082,73084-73088,73092-73096,73098,73100-73102,73104-73106,73108-73110,73112,73114,73117,73119-73120,73122,73133-73134,73138,73142-73143,73146-73147,73149,73151,73155-73156,73159,73168,73179-73180,73188-73189,73194,73197-73198,73204,73206,73208-73215,73217-73220,73222-73226,73228-73235,73237-73238,73240-73245,73247,73251,73253,73255,73259,73261,73263-73274,73276-73284,73286,73288,73290-73292,73295-73297,73299,73302-73303,73305-73311,73313-73314,73316,73318-73325,73327-73342,73344-73365,73367-73369,73372-73379,73381-73384,73386-73391,73393-73397,73400,73402-73409,73411-73414,73416-73424,73426-73435,73437-73438,73440-73452,73454-73455,73457-73464,73466-73467,73471-73472,73476,73478-73489,73491-73497,73499-73504,73506-73509,73511-73518,73520-73525,73527-73530,73532-73541,73543-73551,73553-73555,73557-73565,73567-73574,73579-73594,73596-73607,73610-73616,73618-73631,73633-73642,73644-73651,73653-73663,73665-73666,73668-73670,73675,73677-73680,73683-73711,73713-73714,73716-73717,73719-73720,73722-73725,73727-73740,73742-73766,73768-73771,73773-73785,73787-73792,73795-73796,73798,73800-73807,73809-73822,73824,73826,73828-73844,73846-73851,73853-73855,73857-73860,73862-73865,73867-73878,73880-73887,73890-73892,73895-73899,73901-73902,73904,73909,73911-73916,73921-73933,73935-73942,73944-73950,73952-73954,73956-73962,73964-73965,73967-73969,73971-73974,73976-73977,73979-73982,73985-73997,73999-74005,74007-74008,74010-74015,74017-74022,74024-74027,74029-74042,74044-74050,74052-74067,74069-74070,74073,74075-74079,74082-74090,74093-74099,74101-74109,74113-74114,74116-74120,74122,74124,74128-74139,74141-74144,74146-74155,74158-74159,74161-74164,74166-74175,74177-74186,74188-74213,74217-74219,74221-74225,74227-74236,74238-74257,74259-74267,74269-74278,74280-74292,74294-74303,74305-74308,74311-74332,74334-74336,74339-74340,74353-74373,74375-74382,74384-74385,74387-74388,74390-74405,74408-74424,74426-74431,74433-74437,74439-74440,74443-74465,74467,74469,74471-74476,74478-74480,74483-74484,74487-74489,74491-74498,74500-74502,74504-74514,74516-74521,74523,74525-74526,74528-74533,74535-74545,74547-74551,74553-74563,74567-74568,74570,74573-74575,74577-74585,74587-74592,74594-74628,74630-74633,74635,74637-74643,74645-74658,74660-74666,74668-74671,74675-74692,74694-74697,74699,74701-74711,74713,74716-74736,74738,74740-74741,74743-74750,74752-74760,74762-74765,74767-74772,74774-74777,74780,74783,74785,74788-74792,74794-74798,74800-74803,74806,74809,74811-74812,74814,74818-74824,74826-74829,74831-74832,74834,74836-74841,74843-74847,74849-74853,74855-74869,74872-74886,74891-74892,74894,74896,74898-74899,74904,74908-74917,74921-74924,74926-74928,74930-74935,74941,74943-74947,74949-74954,74956,74958-74963,74966-74972,74974-74976,74979-74981,74983-74993,74995,74997-75001,75003-75015,75017-75020,75022-75026,75028,75030-75048,75051-75053,75055-75061,75063,75065-75074,75077-75079,75081-75092,75094-75095,75097,75099-75102,75105-75106,75109-75113,75115-75120,75122,75124-75125,75127-75161,75165,75167-75177,75179-75180,75182,75184-75188,75190-75191,75193,75195,75197,75199-75200,75202-75203,75205-75210,75214-75227,75229,75232,75234-75240,75242-75255,75257-75262,75266,75268-75273,75276-75278,75281-75292,75294-75363,75365-75372,75374-75380,75382,75384-75389,75391-75392,75394-75400,75403-75415,75417-75418,75420-75430,75432-75449,75451-75467,75469-75490,75492-75498,75500-75503,75505-75522,75525-75534,75536-75547,75549,75551-75562,75566-75582,75584-75587,75589-75596,75598-75606,75608-75609,75611-75646,75649,75652,75656-75674,75676-75682,75684-75721,75723,75725-75730,75732-75763,75765,75769-75776,75779,75781-75796,75798-75830,75832,75834-75851,75853-75856,75859-75870,75872-75875,75877-75884,75887-75888,75890-75961,75963-75969,75971-75973,75975-75999,76001-76002,76006-76018,76021-76026,76028,76030-76036,76038-76045,76047-76053,76055-76056,76058-76071,76073-76083,76085-76086,76088,76090-76092,76094-76097,76100-76107,76109-76142,76144-76163,76169-76176,76178-76181,76184-76188,76191,76193-76200,76202-76207,76209-76214,76217,76219-76224,76226-76243,76245-76247,76249-76257,76261-76289,76291-76293,76295-76297,76299-76308,76310-76313,76316-76324,76326-76370,76372,76374-76390,76392-76406,76408-76413,76417-76420,76423-76437,76439-76450,76452-76467,76470-76494,76497-76509,76511-76577,76580-76589,76592-76610,76613-76631,76634-76657,76659-76661,76663,76666-76672,76674,76676-76711,76713-76745,76747-76755,76757-76764,76766-76781,76783-76795,76798-76820,76822-76837,76839-76866,76868-76898,76901-76942,76945-76953,76956-76988,76990-77002,77004-77010,77012-77016,77018-77026,77028-77036,77038-77047,77050-77088,77090-77125,77127-77309,77311-77324,77326-77344,77346-77376,77378-77383,77386-77454,77456-77460,77462-77475,77477-77493,77497-77546,77548-77587,77589-77596,77598-77612,77614-77623,77625-77629,77631-77656,77658-77727,77729-77762,77764,77766-77773,77775-77830,77832-77836,77838-77843,77845-77865,77867-77876,77878-77883,77885-77899,77901-77949,77951-77959,77961-77979,77981-77983,77985-77987,77989-77996,77998-78047,78049-78068,78070-78100,78102-78111,78113-78119,78121-78128,78130-78132,78134-78186,78188-78238,78240-78248,78250-78265,78267-78300,78302-78320,78322-78339,78341-78373,78375-78417,78419-78441,78444-78458,78460-78480,78482-78496,78498-78502,78504-78535,78537-78544,78548-78634,78636-78677,78679-78695,78697-78702,78704-78718,78720-78744,78746-78783,78785-78786,78789-78794,78796-78827,78829,78831-78911,78913-78942,78945-78959,78961-79000,79002-79013,79015-79076,79078-79083,79085-79088,79091-79094,79096-79123,79125-79174,79176-79201,79203-79218,79220-79222,79224-79225,79227-79245,79247-79250,79252-79258,79260-79268,79270-79274,79276-79308,79311-79312,79314-79321,79323-79329,79331-79336,79338-79356,79358-79368,79370-79394,79396-79416,79418-79462,79464-79474,79476-79516,79519-79547,79549-79561,79563-79600,79603-79616,79618-79660,79662-79683,79685-79688,79690-79733,79735-79742,79744-79757,79759-79793,79796-79845,79847-79863,79865-79876,79878-79965,79967-79992,79994-80004,80006-80014,80016-80056,80058-80061,80063-80077,80079-80082,80084-80088,80090-80101,80103-80105,80107-80110,80112-80114,80116-80118,80120-80142,80144-80146,80148-80155,80157-80188,80190-80211,80213-80224,80226-80257,80259-80269,80271-80289,80291-80301,80303-80304,80306-80328,80330-80333,80335-80342,80344-80362,80365-80366,80368-80398,80400-80441,80443-80447,80449-80513,80515-80529,80531-80584,80586-80633,80635-80640,80642-80645,80647-80648,80650-80656,80658-80718,80720-80728,80730-80863,80865-80919,80921-80926,80928-80941,80943-80944,80946-80960,80963-80966,80968-80975,80977-80980,80982-80988,80991-80992,80994-81002,81005-81017,81020-81037,81039-81098,81100-81134,81136-81256,81258-81351,81353-81361,81363-81367,81370-81434,81436-81542,81544-81566,81568-81656,81658-81693,81695-81753,81756-81763,81766,81768-81771,81773-81804,81806-82001,82003-82028,82030-82126,82128,82130-82234,82236-82352,82355-82379,82381-82390,82392-82412,82414-82437,82439-82456,82458-82560,82562-82755,82757,82759-82776,82778-82814,82816-82842,82844-82947,82949-83087,83089-83090,83092-83179,83181,83184-83299,83301-83369,83371-83446,83448-83485,83487-83542,83544-83674,83677-83745,83747-83796,83798-84009,84011-84015,84017-84205,84207-84381,84383-84722,84724-84780,84782-84829,84831-84905,84907-84939,84941-85022,85024-85193,85195-85227,85229-85231,85233-85247,85249-85259,85261-85595,85597-85888,85890-85939,85941-85950,85952-86170,86172-86333,86335-86499,86501-86640,86642-86741,86743-87028,87030-87083,87085-87092,87094-87147,87149,87151-87154,87156-87225,87227-87235,87237-87294,87296-87385,87387-87443,87445-87651,87653-87715,87717-88123,88125-88419,88421-88484,88486,88489-88661,88663-88697,88699-88868,88870-88948,88950-89119,89121-89175,89177-89187,89189-89239,89241-89265,89267-89274,89276-89307,89309-89365,89367-89419,89421-89511,89513-89653,89655-89870,89872-90226,90228-90237,90239-90518,90520-90742,90745-90819,90821-91026,91028-91071,91073-91240,91242-91312,91314-91354,91356-91515,91517,91519-91680,91682-91711,91713-91944,91946-91984,91986-92049,92051-94637\ngoog-whitemodule-digest256;a:1-93\ngoog-badresource-shavar;a:1-11\n</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">safebrowsing.google.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/safebrowsing/downloads?client=googlechrome&amp;appver=60.0.3112.78&amp;pver=3.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;ext=0</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/vnd.google.safebrowsing-update</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">sync=133_134_132_61_45_65_54_23_48_55_17_73_22_74; DOMAIN=connexity.net</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="update2" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;request protocol=&quot;3.1&quot; dedup=&quot;cr&quot; acceptformat=&quot;crx2,crx3&quot; version=&quot;chrome-60.0.3112.78&quot; prodversion=&quot;60.0.3112.78&quot; requestid=&quot;{a0362de8-60b0-4d11-b6dd-b15ba180b7fa}&quot; lang=&quot;en-GB&quot; updaterchannel=&quot;&quot; prodchannel=&quot;&quot; os=&quot;win&quot; arch=&quot;x86&quot; nacl_arch=&quot;x86-64&quot; wow64=&quot;1&quot; domainjoined=&quot;1&quot;&gt;&lt;hw physmemory=&quot;8&quot;/&gt;&lt;os platform=&quot;Windows&quot; arch=&quot;x86_64&quot; version=&quot;10.0.15063.483&quot;/&gt;&lt;updater autoupdatecheckenabled=&quot;1&quot; lastchecked=&quot;0&quot; laststarted=&quot;0&quot; name=&quot;Omaha&quot; updatepolicy=&quot;0&quot; version=&quot;1.3.33.5&quot;/&gt;&lt;app appid=&quot;mimojjlkmoijpicakmndhoigimigcmbb&quot; version=&quot;26.0.0.137&quot; brand=&quot;GGRV&quot; cohort=&quot;1:d0j:&quot; cohortname=&quot;Chrome [M50... M99]&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{802584a4-fcb2-405f-bd9c-295780214a65}&quot;/&gt;&lt;packages&gt;&lt;package fp=&quot;1.4bcc0b17ab91b8d88db4f8a04b154d967d018a2e33954b06abf0ffe7ed3b7b33&quot;/&gt;&lt;/packages&gt;&lt;/app&gt;&lt;app appid=&quot;oimompecagnajdejgnnjijobebaeigek&quot; version=&quot;1.4.8.1000&quot; brand=&quot;GGRV&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{5e2482d5-d59d-4dc0-a4d5-2ab78202e137}&quot;/&gt;&lt;/app&gt;&lt;app appid=&quot;gcmjkmgdlgnkkcocmoeiminaijmmjnii&quot; version=&quot;7.54&quot; brand=&quot;GGRV&quot; cohort=&quot;1:bm1:&quot; cohortname=&quot;M54AndAbove&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{06707018-537e-412e-98c0-ef9855eee10d}&quot;/&gt;&lt;packages&gt;&lt;package fp=&quot;1.e5ac6a4f2e3fd1eef8a61bf912c880dcbe57adcee6415d892c84e7e85ea476dc&quot;/&gt;&lt;/packages&gt;&lt;/app&gt;&lt;app appid=&quot;oafdbfcohdcjandcenmccfopbeklnicp&quot; version=&quot;7&quot; brand=&quot;GGRV&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{6c7dbd83-3e63-4be3-a238-690c8212529e}&quot;/&gt;&lt;packages&gt;&lt;package fp=&quot;1.1d358758a4bc326dadea05039ccbe0f26f6cc478b796f6a967f74c8fadf73d8a&quot;/&gt;&lt;/packages&gt;&lt;/app&gt;&lt;app appid=&quot;ojjgnpkioondelmggbekfhllhdaimnho&quot; version=&quot;466&quot; brand=&quot;GGRV&quot; cohort=&quot;1:0:&quot; cohortname=&quot;Auto&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{737e5e85-221c-428b-914b-e23f472df03d}&quot;/&gt;&lt;packages&gt;&lt;package fp=&quot;1.6ad8846b0972447f91b52293440232e593b46500fd3ac07244a9a2d4b920b0a5&quot;/&gt;&lt;/packages&gt;&lt;/app&gt;&lt;app appid=&quot;llkgjffcdpffmhiakmfcdcblohccpfmo&quot; version=&quot;0.0.0.0&quot; brand=&quot;GGRV&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{a9d25495-ec34-4589-a41e-ce89d1487061}&quot;/&gt;&lt;/app&gt;&lt;app appid=&quot;khaoiebndkojlmppeemjhbpbandiljpe&quot; version=&quot;11&quot; brand=&quot;GGRV&quot; cohort=&quot;1:cux:&quot; cohortname=&quot;Auto&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{012eb7d1-5547-49ba-95dd-e15896cd08e7}&quot;/&gt;&lt;packages&gt;&lt;package fp=&quot;1.a67bbe7188e0335f00c488209bd4dfe39cb26a916c379c4416479d83e63761ef&quot;/&gt;&lt;/packages&gt;&lt;/app&gt;&lt;app appid=&quot;giekcmmlnklenlaomppkphknjmnnpneh&quot; version=&quot;3&quot; brand=&quot;GGRV&quot; cohort=&quot;1:j5l:&quot; cohortname=&quot;Auto&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{742df5ae-77cd-4b77-89fe-f6b4629a22e3}&quot;/&gt;&lt;packages&gt;&lt;package fp=&quot;1.7bfaaaf86917c1d6ebc1c794c849d6eb6a267e241af6a46cbb8929e24c2ab007&quot;/&gt;&lt;/packages&gt;&lt;/app&gt;&lt;app appid=&quot;gkmgaooipdjhmangpemjhigmamcehddo&quot; version=&quot;20.115.3&quot; brand=&quot;GGRV&quot; cohort=&quot;1:gcf:&quot; cohortname=&quot;Stable&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{64ace7d8-3f75-4dc6-a74f-686e7f66579b}&quot;/&gt;&lt;packages&gt;&lt;package fp=&quot;1.8e0bf59ced78f557e82869bb165aba1365a34853c9d27f12a92d658a74c4561b&quot;/&gt;&lt;/packages&gt;&lt;/app&gt;&lt;app appid=&quot;hnimpnehoodheedghdeeijklkeaacbdc&quot; version=&quot;0.57.44.2492&quot; brand=&quot;GGRV&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{c708ea61-2a90-4a9f-abe3-571f188811e8}&quot;/&gt;&lt;packages&gt;&lt;package fp=&quot;1.1cd7dc2056afaa0f6a705c9a17d22bba6578b33f5dae9e2d6518a0bfcced2396&quot;/&gt;&lt;/packages&gt;&lt;/app&gt;&lt;app appid=&quot;hfnkpimlhhgieaddgfemjhofmfblmnib&quot; version=&quot;3889&quot; brand=&quot;GGRV&quot; cohort=&quot;1:jcl:&quot; cohortname=&quot;Auto&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{5ef7cdb9-37bf-41f3-851d-b917fee81e61}&quot;/&gt;&lt;/app&gt;&lt;app appid=&quot;npdjjkjlcidkjlamlmmdelcjbcpdjocm&quot; version=&quot;0.0.0.0&quot; brand=&quot;GGRV&quot;&gt;&lt;updatecheck/&gt;&lt;ping rd=&quot;3866&quot; ping_freshness=&quot;{ec623023-2573-44cc-9120-ad6d454ceb0b}&quot;/&gt;&lt;/app&gt;&lt;/request&gt;</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">update.googleapis.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/service/update2?cup2key=7:3536315096&amp;cup2hreq=7430a88693aadee92a43168bb179b8f37acfcde57900ca7ce2bcff0d3b269c97</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">text/xml</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">sync=133_134_132_61_45_65_54_23_48_55_17_73_22_74; DOMAIN=connexity.net</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Specials" enabled="true">
+              <boolProp name="TransactionController.parent">true</boolProp>
+            </TransactionController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="5041506" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">www.bcf.com.au</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/store/managers-specials/5041506</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">sync=133_134_132_61_45_65_54_23_48_55_17_73_22_74; DOMAIN=connexity.net</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;Managers Specials - BCF Australia&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="310861734">Managers Specials - BCF Australia</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetCart_2" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;plu&quot;:null,&quot;quantity&quot;:null,&quot;sourceID&quot;:null}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">www.bcf.com.au</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/ShoppingCart/GetCart</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">http://www.bcf.com.au/store/managers-specials/5041506</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">sync=133_134_132_61_45_65_54_23_48_55_17_73_22_74; DOMAIN=connexity.net</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;BonusBuyList&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1640115013">BonusBuyList</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="0_2" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">bat.bing.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/action/0?ti=5256926&amp;Ver=2&amp;mid=e50a2720-07d2-14d1-857c-d773693401ec&amp;evt=pageLoad&amp;sid=4373206d-0&amp;lt=2362&amp;pi=-1898162245&amp;lg=en-GB&amp;sw=1500&amp;sh=1000&amp;sc=24&amp;r=http%3A%2F%2Fwww.bcf.com.au%2F&amp;tl=Managers%20Specials%20-%20BCF%20Australia&amp;kw=Managers%20Specials&amp;p=http%3A%2F%2Fwww.bcf.com.au%2Fstore%2Fmanagers-specials%2F5041506%3Fpage%3D1%26pageSize%3D24%26sort%3D-ProductSummaryPurchasesWeighted%252C-ProductSummaryPurchases&amp;rn=702362</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">sync=133_134_132_61_45_65_54_23_48_55_17_73_22_74; DOMAIN=connexity.net</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cse_3" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">connexity.net</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/c/cse?a=S&amp;A=232&amp;D=576d&amp;V=10&amp;R=1500x1000c24&amp;T=6e&amp;I0k=prodid&amp;I0v=%23%23INSERT_PRODUCT_ID%23%23&amp;J=http%3A%2F%2Fwww.bcf.com.au%2Fstore%2Fmanagers-specials%2F5041506%3Fpage%3D1%26pageSize%3D24%26sort%3D-ProductSummaryPurchasesWeighted%252C-ProductSummaryPurchases&amp;b=5610</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">sync=133_134_132_61_45_65_54_23_48_55_17_73_22_74; DOMAIN=connexity.net</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;var startstamp = new Date()&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1638147768">var startstamp = new Date()</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="dis.aspx" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">dis.as.criteo.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/dis/dis.aspx?p=23025&amp;cb=97166911719&amp;ref=http%3A%2F%2Fwww.bcf.com.au%2F&amp;sc_r=1500x1000&amp;sc_d=24</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;Dising&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="49586">200</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                  <intProp name="Assertion.test_type">8</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="tr" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;dl&quot;: &quot;http://www.bcf.com.au/store/managers-specials/5041506?page=1&amp;pageSize=24&amp;sort=-ProductSummaryPurchasesWeighted%2C-ProductSummaryPurchases&quot;, &quot;cd[Schema.org]&quot;: [{&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$169.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$369.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$249.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$299.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$235.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$49.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$43.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$76.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$280.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$76.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$199.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$299.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$29.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$79.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$309.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$19.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$169.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$9.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$229.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$169.00&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$29.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$79.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$59.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}, {&quot;type&quot;: &quot;http://schema.org/Offer&quot;, &quot;properties&quot;: {&quot;price&quot;: &quot;$94.99&quot;, &quot;priceCurrency&quot;: &quot;AUD&quot;}}], &quot;ts&quot;: 1501735465515, &quot;o&quot;: 28, &quot;cd[OpenGraph]&quot;: &quot;{}&quot;, &quot;v&quot;: &quot;2.7.19&quot;, &quot;rl&quot;: &quot;http://www.bcf.com.au/&quot;, &quot;ev&quot;: &quot;Microdata&quot;, &quot;id&quot;: 923391787702806, &quot;if&quot;: false}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">www.facebook.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/tr/</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">http://www.bcf.com.au/store/managers-specials/5041506?page=1&amp;pageSize=24&amp;sort=-ProductSummaryPurchasesWeighted%2C-ProductSummaryPurchases</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;proxygen&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-985168350">proxygen</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="iframeStorage-5.0.0.html" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">configaus2.veinteractive.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/scripts/shared/iframeStorage-5.0.0.html?iframeid=ve-storage-iframe&amp;journeyId=15309</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;nosniff&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="2128578957">nosniff</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="appsmanagerinit" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">appsapihk.veinteractive.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/api/appsmanagerinit?isCookieEnabled=true&amp;timeToLive=60&amp;referrerDomain=http%3A%2F%2Fwww.bcf.com.au%2F&amp;landingPage=http%3A%2F%2Fwww.bcf.com.au%2Fstore%2Fmanagers-specials%2F5041506%3Fpage%3D1%26pageSize%3D24%26sort%3D-ProductSummaryPurchasesWeighted%252C-ProductSummaryPurchases&amp;journeyCode=D68C87B5-ACC6-4F3B-B86D-AB8A8F17ECB8&amp;o=1989456844</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cse_4" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">connexity.net</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/c/cse?a=P&amp;A=232&amp;C=0&amp;D=576d&amp;N=0-1a5b4f2dfc3023e4&amp;R=1500x1000c24&amp;T=6e&amp;U=e9130e0e60a7f797-06221138786d19a9-211dc3652322137f&amp;J=http%253a%252f%252fwww.bcf.com.au%252fstore%252fmanagers-specials%252f5041506%253fpage%253d1%2526pagesize%253d24%2526sort%253d-productsummarypurchasesweighted%252c-productsummarypurchases&amp;V=10&amp;I0k=prodid&amp;I0v=%23%23INSERT_PRODUCT_ID%23%23&amp;Q=v2.0.1,c:y,h5L:y,TS:(run:1ms),(Burl-R:233ms),(Burl-P:233ms)</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;End of DoubleClick Floodlight Tag&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1733342655">End of DoubleClick Floodlight Tag</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="gethash_2" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">4:4&#xd;
+q a~</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">safebrowsing.google.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/safebrowsing/gethash?client=googlechrome&amp;appver=60.0.3112.78&amp;pver=3.0&amp;key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw&amp;ext=0</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/octet-stream</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;goog-phish-shavar&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="53430">600</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="mapuser" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">usync.nexage.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/mapuser?providerid=10921&amp;userid=e6f86d60-cb67-4f0d-a454-6472c28600d0</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="match" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">cosy.smaato.net</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/criteo/match?criteo_uid=e6f86d60-cb67-4f0d-a454-6472c28600d0</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;criteo_uid=&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-521131704">criteo_uid=</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="us.nend.net" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">us.nend.net</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/?f=6c1d6142&amp;i=e6f86d60-cb67-4f0d-a454-6472c28600d0</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;nginx&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="104760218">nginx</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="empty.html" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">static.criteo.net</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/empty.html</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;&lt;head&gt;&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1816900514">&lt;head&gt;</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Test Action" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">10000</stringProp>
+            </TestAction>
+            <hashTree/>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Home" enabled="true">
+              <boolProp name="TransactionController.parent">true</boolProp>
+            </TransactionController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="www.bcf.com.au_2" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">www.bcf.com.au</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;Boating, Camping and Fishing Store Online - BCF Australia&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="1273405624">Boating, Camping and Fishing Store Online - BCF Australia</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetCart_3" enabled="true">
+                <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.value">{&quot;plu&quot;:null,&quot;quantity&quot;:null,&quot;sourceID&quot;:null}</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">www.bcf.com.au</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/ShoppingCart/GetCart</stringProp>
+                <stringProp name="HTTPSampler.method">POST</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Referer</stringProp>
+                      <stringProp name="Header.value">http://www.bcf.com.au/</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;StoreLocationID&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-478070991">StoreLocationID</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="0_3" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">bat.bing.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/action/0?ti=5256926&amp;Ver=2&amp;mid=23e2cbfa-e84c-1a37-4c43-0d5fdb5c7e44&amp;evt=pageLoad&amp;sid=4373206d-0&amp;lt=5114&amp;pi=0&amp;lg=en-GB&amp;sw=400&amp;sh=789&amp;sc=24&amp;r=http%3A%2F%2Fwww.bcf.com.au%2F&amp;tl=Boating,%20Camping%20and%20Fishing%20Store%20Online%20-%20BCF%20Australia&amp;kw=BCF,%20Boating,%20Camping%20and%20Fishing%20Store%20Online%20-%20BCF%20Australia&amp;p=http%3A%2F%2Fwww.bcf.com.au%2F&amp;rn=517245</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;X-MSEdge-Ref&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-1131173698">X-MSEdge-Ref</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="iframeStorage-5.0.0.html_2" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">configaus2.veinteractive.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/scripts/shared/iframeStorage-5.0.0.html?iframeid=ve-storage-iframe&amp;journeyId=15309</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cse_5" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">connexity.net</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/c/cse?a=S&amp;A=232&amp;D=576d&amp;V=10&amp;R=400x789c24&amp;T=6e&amp;I0k=prodid&amp;I0v=%23%23INSERT_PRODUCT_ID%23%23&amp;J=http%3A%2F%2Fwww.bcf.com.au%2F&amp;b=6651</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;window.setTimeout;function V&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="-622197492">window.setTimeout;function V</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="dis.aspx_2" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">dis.as.criteo.com</stringProp>
+                <stringProp name="HTTPSampler.port"></stringProp>
+                <stringProp name="HTTPSampler.protocol">http</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+                <stringProp name="HTTPSampler.path">/dis/dis.aspx?p=23025&amp;cb=70498436132&amp;ref=http%3A%2F%2Fwww.bcf.com.au%2F&amp;sc_r=400x789&amp;sc_d=24&amp;site_type=m</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Headers" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">cookie</stringProp>
+                      <stringProp name="Header.value">eid=*1joMPgimUe8jyhej2AQhZ0bonJGd0uXQ599NEU7Wm4pcik0AlDos64NS%2fBhHz2WWgCtmlaija7TP00hYkj7KJ7CeIHqml8qWdLZso8BSlN%2bJOFcBRXLpWTTYkcrmIzR6fyiZ89Rx%2bl%2bkjfggNcC%2bLJR%2bMxqSDkASTGtV1BrsxuWqXzRcgFt9q7vgYbngaBVw5; DOMAIN=dis.as.criteo.com</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert has [&quot;Dising&quot;]" enabled="true">
+                  <collectionProp name="Asserion.test_strings">
+                    <stringProp name="2047282356">Dising</stringProp>
+                  </collectionProp>
+                  <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                  <intProp name="Assertion.test_type">2</intProp>
+                  <boolProp name="Assertion.assume_success">false</boolProp>
+                </ResponseAssertion>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
